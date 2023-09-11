@@ -36,9 +36,11 @@ def get_secret():
 
     # Decrypts secret using the associated KMS key.
     secret = get_secret_value_response['SecretString']
-
+    return secret
     # Your code goes here.
 
+OPENAI_SECRET = get_secret()
+openai.api_key = OPENAI_SECRET
 
 
 OPENAI_KEY = os.environ.get("OPENAI_SECRET_KEY")
