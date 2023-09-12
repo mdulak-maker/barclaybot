@@ -14,6 +14,7 @@ from botocore.exceptions import ClientError
 
 
 OPENAI_KEY = os.environ.get("OPENAI_API_KEY")
+print("OPENAI API KEY:", OPENAI_KEY)
 openai.api_key = OPENAI_KEY
 
 @app.route ('/', methods = ['GET', 'POST'] )
