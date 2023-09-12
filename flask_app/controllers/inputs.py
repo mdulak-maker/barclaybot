@@ -13,8 +13,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 
-
-OPENAI_KEY = os.environ.get("OPENAI_SECRET_KEY")
+OPENAI_KEY = os.environ.get("OPENAI_API_KEY")
 openai.api_key = OPENAI_KEY
 
 @app.route ('/', methods = ['GET', 'POST'] )
