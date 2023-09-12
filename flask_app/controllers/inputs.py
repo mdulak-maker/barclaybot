@@ -2,6 +2,9 @@ from flask_app import app
 from flask import render_template, request
 import os
 import openai
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # Use this code snippet in your app.
